@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    tools:context=".Activity_SignUp2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="35dp">
+
+        <!-- header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Welcome to"
+            android:textColor="@color/black"
+            android:textSize="100px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="218dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:background="@drawable/hearduino_logo" />
+
+        <!-- image placeholder -->
+        <ImageView
+            android:layout_width="301dp"
+            android:layout_height="301dp"
+            android:background="@drawable/edt_background2"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+        </ImageView>
+
+        <!-- insert photo button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="INSERT PHOTO"
+            android:textColor="@color/black" />
+
+
+        <!-- back and sign up button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/gray"
+            android:ems="12"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="BACK"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/gray"
+            android:ems="12"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="SIGN UP"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
