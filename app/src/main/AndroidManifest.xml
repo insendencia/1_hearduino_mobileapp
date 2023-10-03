@@ -18,6 +18,14 @@
         tools:targetApi="31">
 
         <activity
+            android:name=".Popout_Dyk"
+            android:parentActivityName=".Activity_SignUp"/>
+
+        <activity
+            android:name=".Activity_SignUp2"
+            android:parentActivityName=".Activity_SignUp"/>
+
+        <activity
             android:name=".Activity_SignUp"
             android:parentActivityName=".Popout_SignUpWGoogle"/>
 

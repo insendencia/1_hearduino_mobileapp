@@ -34,6 +34,7 @@
 
         <!-- image placeholder -->
         <ImageView
+            android:id="@+id/userIcon"
             android:layout_width="301dp"
             android:layout_height="301dp"
             android:background="@drawable/edt_background2"
@@ -54,19 +55,7 @@
             android:textColor="@color/black" />
 
 
-        <!-- back and sign up button -->
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:backgroundTint="@color/gray"
-            android:ems="12"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="BACK"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
+        <!-- sign up button -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

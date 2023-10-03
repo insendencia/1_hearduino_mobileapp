@@ -68,8 +68,6 @@
             android:textColorHint="@color/black"
             android:textSize="20dp" />
 
-
-
         <!-- question -->
         <TextView
             android:layout_width="wrap_content"
@@ -82,47 +80,36 @@
             android:textSize="50px"
             android:textStyle="bold" />
 
-        <!-- checkboxes -->
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioGroup">
+        <!-- yes or no buttons -->
             <TableRow
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="20dp">
 
-                <RadioButton
+                <Button
+                    android:id="@+id/bYes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="90dp"
-                    android:fontFamily="@font/poppins"
+                    android:layout_marginLeft="80dp"
+                    android:fontFamily="@font/poppins_semibold"
                     android:text="YES"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:backgroundTint="@color/gray"
+                    android:textColor="@color/hearduino_black"/>
 
-                <RadioButton
+                <Button
+                    android:id="@+id/bNo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="60dp"
-                    android:fontFamily="@font/poppins"
+                    android:fontFamily="@font/poppins_semibold"
                     android:text="NO"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:backgroundTint="@color/gray"
+                    android:textColor="@color/hearduino_black"/>
 
             </TableRow>
-        </RadioGroup>
 
-        <!-- continue button -->
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:backgroundTint="@color/gray"
-            android:ems="13"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="CONTINUE"
-            android:textColor="@color/black"
-            android:textSize="18dp" />
     </LinearLayout>
 
 
