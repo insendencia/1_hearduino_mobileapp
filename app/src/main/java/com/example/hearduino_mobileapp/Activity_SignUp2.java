@@ -34,7 +34,7 @@ public class Activity_SignUp2 extends AppCompatActivity {
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
     ImageView imgview;
-    Button cBtn; //change photo button
+    Button cBtn, sBtn; //change photo button, sign up button
     Uri cPic; //change picture
     private static final int PICK_IMAGE = 1;
 
@@ -45,6 +45,7 @@ public class Activity_SignUp2 extends AppCompatActivity {
 
         imgview = findViewById(R.id.userIcon); //initialize image view
         cBtn = findViewById(R.id.CHbutton); //initialize change photo button
+        sBtn = findViewById(R.id.SUbutton); //initialize sign up button
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc = GoogleSignIn.getClient(this,gso);
@@ -70,6 +71,9 @@ public class Activity_SignUp2 extends AppCompatActivity {
             }
         });
 
+        //sign up
+        sBtn.setOnClickListener(view -> openSignUp());
+
     }
 
     //write on activity result for change photo
@@ -86,5 +90,10 @@ public class Activity_SignUp2 extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void openSignUp(){
+        Intent j = new Intent(this, Popout_SignUpWGoogle.class); //change class to sign up final
+        startActivity(j);
     }
 }

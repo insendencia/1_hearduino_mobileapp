@@ -28,6 +28,7 @@
 
         <!-- yes or no button -->
         <Button
+            android:id="@+id/yBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -41,6 +42,7 @@
             android:textSize="20dp"/>
 
         <Button
+            android:id="@+id/nBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
