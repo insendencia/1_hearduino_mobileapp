@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "701443511173",
+    "project_id": "hearduinomobileapp-400712",
+    "storage_bucket": "hearduinomobileapp-400712.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701443511173:android:20c146d5eb069d9c88aaec",
+        "android_client_info": {
+          "package_name": "com.example.hearduino_mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701443511173-cujeu53i4ti1ujbov1npamnu4epa1n6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hearduino_mobileapp",
+            "certificate_hash": "9ddfb09290a7a260254e444b43484e48fbb07d9c"
+          }
+        },
+        {
+          "client_id": "701443511173-m201f8m6q5lmsivnvkegt9nn5l541ssu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-2M5Z-CoudoZ4T_lKf_t6rQePq5MUnIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701443511173-m201f8m6q5lmsivnvkegt9nn5l541ssu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
