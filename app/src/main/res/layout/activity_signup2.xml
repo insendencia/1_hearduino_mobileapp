@@ -42,8 +42,9 @@
             android:layout_marginTop="10dp">
         </ImageView>
 
-        <!-- insert photo button -->
+        <!-- change photo button -->
         <Button
+            android:id="@+id/CHbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -51,9 +52,8 @@
             android:backgroundTint="@color/white"
             android:ems="10"
             android:fontFamily="@font/poppins_extrabold"
-            android:text="INSERT PHOTO"
+            android:text="CHANGE PHOTO"
             android:textColor="@color/black" />
-
 
         <!-- sign up button -->
         <Button
