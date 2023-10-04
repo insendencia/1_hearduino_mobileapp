@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_login.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_signup.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_signup2.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/popout_dyk.xml" value="0.1334853090172239" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2675" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/drawable/button_background.xml" value="0.2675" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/drawable/edt_background.xml" value="0.236" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/drawable/edt_background2.xml" value="0.2675" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/drawable/header_background.xml" value="0.2675" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2675" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/drawable/menu_button_background.xml" value="0.2675" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/drawable/popout_screen.xml" value="0.2675" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/activity_index.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/activity_login.xml" value="0.3319672131147541" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/activity_signup.xml" value="0.4" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/activity_signup2.xml" value="0.264" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/activity_user_home.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/header_home.xml" value="0.2734375" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/header_user_home.xml" value="0.4" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/popout_askforaccount.xml" value="0.2734375" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/popout_askforcode.xml" value="0.264" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/popout_dyk.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/popout_forgotpassword.xml" value="0.2734375" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/popout_menu.xml" value="0.264" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/popout_newpasscodesaved.xml" value="0.2734375" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/popout_relationtodeaf.xml" value="0.264" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/popout_signupwgoogle.xml" value="0.205078125" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/popout_signwgoogle.xml" value="0.264" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/popout_usernamefound.xml" value="0.22521367521367522" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/popout_usernamenotfound.xml" value="0.2734375" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/hearduino_mobileapp/app/src/main/res/layout/sample_scrapfile.xml" value="0.1875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
+  </component>
+</project>

@@ -2,8 +2,10 @@ package com.example.hearduino_mobileapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.drawable.Icon;
 import android.net.Uri;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -17,8 +19,6 @@ import java.time.temporal.TemporalAdjuster;
 
 public class Activity_SignUp2 extends AppCompatActivity {
 
-    private Instant Picasso;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,12 +30,5 @@ public class Activity_SignUp2 extends AppCompatActivity {
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc = GoogleSignIn.getClient(this,gso);
 
-        //get data from the account which is signed in
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        if(acct!=null){
-            Uri personPhoto = acct.getPhotoUrl();
-            //insert to image view
-            Picasso.get().load(personPhoto).into(R.id.userIcon);
-        }
     }
 }

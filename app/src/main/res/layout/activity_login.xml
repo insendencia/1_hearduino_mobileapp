@@ -42,10 +42,11 @@
             android:layout_gravity="center"
             android:layout_marginTop="70dp"
             android:backgroundTint="@color/gray"
-            android:ems="14"
+            android:ems="9"
             android:fontFamily="@font/poppins_bold"
             android:text="LOGIN"
             android:textColor="@color/black"
+            android:textSize="21dp"
             />
 
         <!--sign up here-->
@@ -54,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="25dp"
                 android:fontFamily="@font/poppins_medium"
                 android:text="Don't have an account?"
                 android:textColor="@color/black"
@@ -67,9 +68,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/poppins_bold"
-            android:text="Sign Up"
+            android:text="Sign Up with Google"
             android:textColor="@color/black"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:backgroundTint="@color/gray"/>
 
 
     </LinearLayout>
