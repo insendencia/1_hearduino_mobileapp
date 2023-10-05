@@ -28,7 +28,7 @@
             android:textAlignment="center"/>
 
         <!-- family relation -->
-        <CheckBox
+        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mother/Father"
@@ -36,7 +36,7 @@
             android:fontFamily="@font/poppins_medium"
             android:textSize="20dp" />
 
-        <CheckBox
+        <RadioButton
             android:layout_width="177dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"
@@ -44,7 +44,7 @@
             android:textColor="@color/black"
             android:textSize="20dp" />
 
-        <CheckBox
+        <RadioButton
             android:layout_width="177dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"
@@ -52,7 +52,7 @@
             android:textColor="@color/black"
             android:textSize="20dp" />
 
-        <CheckBox
+        <RadioButton
             android:layout_width="177dp"
             android:layout_height="wrap_content"
             android:text="Spouse"
@@ -60,7 +60,7 @@
             android:fontFamily="@font/poppins_medium"
             android:textSize="20dp"/>
 
-        <CheckBox
+        <RadioButton
             android:layout_width="177dp"
             android:layout_height="wrap_content"
             android:text="Friend"
@@ -68,7 +68,7 @@
             android:fontFamily="@font/poppins_medium"
             android:textSize="20dp"/>
 
-        <CheckBox
+        <RadioButton
             android:layout_width="177dp"
             android:layout_height="wrap_content"
             android:text="Other"
@@ -78,6 +78,7 @@
 
         <!-- back and continue button -->
         <Button
+            android:id="@+id/contBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -91,6 +92,7 @@
             android:textSize="20dp"/>
 
         <Button
+            android:id="@+id/bBUTTON"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
