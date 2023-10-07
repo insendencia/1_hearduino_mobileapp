@@ -18,6 +18,10 @@
         tools:targetApi="31">
 
         <activity
+            android:name=".Popout_ReviewInformation"
+            android:parentActivityName=".Activity_SignUp2"/>
+
+        <activity
             android:name=".Popout_RelationToDeaf"
             android:parentActivityName=".Popout_Dyk"/>
 

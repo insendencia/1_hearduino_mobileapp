@@ -93,7 +93,7 @@ public class Activity_SignUp2 extends AppCompatActivity {
     }
 
     public void openSignUp(){
-        Intent j = new Intent(this, Popout_SignUpWGoogle.class); //change class to sign up final
+        Intent j = new Intent(this, Popout_ReviewInformation.class); //change class to sign up final
         startActivity(j);
     }
 }

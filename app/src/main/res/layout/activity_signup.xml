@@ -68,6 +68,24 @@
             android:textColorHint="@color/black"
             android:textSize="20dp" />
 
+        <!-- phone number-->
+        <EditText
+            android:id="@+id/userphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_background"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"/>
+
         <!-- question -->
         <TextView
             android:layout_width="wrap_content"
