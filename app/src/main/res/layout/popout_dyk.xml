@@ -16,6 +16,15 @@
         android:background="@drawable/popout_screen"
         android:layout_margin="40dp">
 
+        <!-- logo -->
+        <ImageView
+            android:id="@+id/hLogo"
+            android:layout_width="275dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:background="@drawable/hearduino_logo"
+            android:layout_centerHorizontal="true"/>
+
         <!-- text -->
         <TextView
             android:layout_width="wrap_content"

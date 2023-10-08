@@ -8,9 +8,19 @@
     android:layout_gravity="center"
     tools:context=".Popout_RelationToDeaf">
 
+    <!-- logo -->
+    <ImageView
+        android:id="@+id/hLogo"
+        android:layout_width="275dp"
+        android:layout_height="82dp"
+        android:layout_gravity="center"
+        android:background="@drawable/hearduino_logo"
+        android:layout_centerHorizontal="true"/>
+
     <!-- text question -->
     <TextView
         android:id="@+id/txtQ"
+        android:layout_below="@id/hLogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="WHAT IS YOUR RELATION TO THEM?"

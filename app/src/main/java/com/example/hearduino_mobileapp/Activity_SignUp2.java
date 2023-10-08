@@ -7,12 +7,18 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Icon;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -28,72 +34,50 @@ import java.io.IOException;
 import java.time.Instant;
 import java.time.temporal.TemporalAdjuster;
 import java.util.Objects;
+import java.util.ResourceBundle;
 
 public class Activity_SignUp2 extends AppCompatActivity {
 
-    GoogleSignInOptions gso;
-    GoogleSignInClient gsc;
-    ImageView imgview;
-    Button cBtn, sBtn; //change photo button, sign up button
-    Uri cPic; //change picture
-    private static final int PICK_IMAGE = 1;
+    TextView name, email, number;
+    Button yBtn, nBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup2);
 
-        imgview = findViewById(R.id.userIcon); //initialize image view
-        cBtn = findViewById(R.id.CHbutton); //initialize change photo button
-        sBtn = findViewById(R.id.SUbutton); //initialize sign up button
+        name = findViewById(R.id.setName); //initialize set name
+        email = findViewById(R.id.setEmail); //initialize set email
+        number = findViewById(R.id.setNum); //initialize set number
+        yBtn = findViewById(R.id.bYes); //initialize yes button
+        nBtn = findViewById(R.id.bNo); //initialize no button
 
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
-        gsc = GoogleSignIn.getClient(this,gso);
+        //Get text from Intent
+        Intent intent = getIntent();
+        String getName = intent.getStringExtra("name");
+        String getNumber = intent.getStringExtra("number");
+        String getEmail = intent.getStringExtra("email");
 
-        //get data from the account which is signed in
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        if (acct != null) {
-            //get profile picture
-            Uri personPhoto = acct.getPhotoUrl();
-            //insert to image view
-            Picasso.get().load(personPhoto).into(imgview);
-        }
+        //Set Text
+        name.setText(getName);
+        number.setText(getNumber);
+        email.setText(getEmail);
 
-        //change photo
-        cBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent gallery = new Intent();
-                gallery.setType("image/*");
-                gallery.setAction(Intent.ACTION_GET_CONTENT);
-
-                startActivityForResult(Intent.createChooser(gallery, "Select Photo"), PICK_IMAGE);
-            }
-        });
-
-        //sign up
-        sBtn.setOnClickListener(view -> openSignUp());
-
+        yBtn.setOnClickListener(view -> openReviewInformation());
     }
 
-    //write on activity result for change photo
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
+    public void openReviewInformation(){
+        //get data from views
+        String getName = name.getText().toString();
+        String getEmail = email.getText().toString();
+        String getNumber = number.getText().toString();
 
-        if(requestCode == PICK_IMAGE && resultCode == RESULT_OK){
-            cPic = data.getData();
-            try{
-                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), cPic);
-                imgview.setImageBitmap(bitmap);
-            }catch (IOException e){
-                e.printStackTrace();
-            }
-        }
-    }
+        //transfer to next activity
+        Intent i = new Intent(this, Popout_ReviewInformation.class);
+        i.putExtra("name", getName);
+        i.putExtra("email", getEmail);
+        i.putExtra("number", getNumber);
 
-    public void openSignUp(){
-        Intent j = new Intent(this, Popout_ReviewInformation.class); //change class to sign up final
-        startActivity(j);
+        startActivity(i);
     }
 }

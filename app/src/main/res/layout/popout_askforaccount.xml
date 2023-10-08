@@ -16,6 +16,15 @@
         android:background="@drawable/popout_screen"
         android:layout_margin="40dp">
 
+        <!-- logo -->
+        <ImageView
+            android:id="@+id/hLogo"
+            android:layout_width="275dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:background="@drawable/hearduino_logo"
+            android:layout_centerHorizontal="true"/>
+
         <!-- text -->
         <TextView
             android:layout_width="wrap_content"
@@ -28,6 +37,7 @@
 
         <!-- yes or no button -->
         <Button
+            android:id="@+id/yesBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -41,6 +51,7 @@
             android:textSize="20dp"/>
 
         <Button
+            android:id="@+id/noBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

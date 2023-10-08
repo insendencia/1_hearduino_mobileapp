@@ -59,7 +59,7 @@ public class Popout_RelationToDeaf extends AppCompatActivity {
     }
 
     public void openSU2(){
-        Intent i = new Intent(this, Activity_SignUp2.class);
+        Intent i = new Intent(this, Popout_AskForAccount.class);
         startActivity(i);
     }
 
