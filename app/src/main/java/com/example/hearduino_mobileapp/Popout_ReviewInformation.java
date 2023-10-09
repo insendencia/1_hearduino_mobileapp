@@ -2,6 +2,7 @@ package com.example.hearduino_mobileapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,34 +16,31 @@ import com.google.android.gms.tasks.Task;
 
 public class Popout_ReviewInformation extends AppCompatActivity {
 
-    GoogleSignInOptions gso;
-    GoogleSignInClient gsc;
-    TextView name, email, pNum;
-    int num;
-
+    //Button btnSignUp;
+    TextView name, email, num;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.popout_reviewinformation);
-        //set local variable
+
+        name = findViewById(R.id.setName); //initialize name
+        email = findViewById(R.id.setEmail); //initialize email
+        num = findViewById(R.id.setNum); //initialize phone number
+        //btnSignUp = findViewById(R.id.signup); //initialize sign up
+
+        //Get text from Intent
         Intent intent = getIntent();
+        String getName = intent.getStringExtra("name");
+        String getNumber = intent.getStringExtra("number");
+        String getEmail = intent.getStringExtra("email");
 
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
-        gsc = GoogleSignIn.getClient(this,gso);
+        //Set Text
+        name.setText(getName);
+        num.setText(getNumber);
+        email.setText(getEmail);
 
-        name = findViewById(R.id.gName); //initialize name
-        email = findViewById(R.id.gEmail); //initialize email
-        pNum = findViewById(R.id.pNum); //initialize phone number
-
-        //get data from the account which is signed in
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        if(acct!=null){
-            String personName = acct.getDisplayName();
-            String personEmail = acct.getEmail();
-            //insert to text view
-            name.setText(personName);
-            email.setText(personEmail);
-        }
+        //btnSignUp.setOnClickListener(view -> openWelcomeToHearduino());
     }
+
 }

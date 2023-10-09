@@ -43,8 +43,9 @@ public class Popout_RelationToDeaf extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String value = adapterView.getItemAtPosition(i).toString();
+                String value = adapterView.getSelectedItem().toString();
                 Toast.makeText(Popout_RelationToDeaf.this, value, Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
