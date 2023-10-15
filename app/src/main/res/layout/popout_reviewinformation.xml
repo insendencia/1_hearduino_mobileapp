@@ -143,6 +143,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <TextView
+                android:id="@+id/setRelationText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RELATION:"
@@ -151,7 +152,8 @@
                 android:textSize="17dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:paddingLeft="20dp"/>
+                android:paddingLeft="20dp"
+                />
 
             <TextView
                 android:id="@+id/setRelation"
@@ -163,7 +165,8 @@
                 android:textSize="19dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:paddingLeft="10dp"/>
+                android:paddingLeft="10dp"
+                />
         </LinearLayout>
 
 

@@ -17,7 +17,7 @@
         <!-- welcome header -->
         <View
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="20dp"
             android:layout_margin="5dp"/>
         <LinearLayout
             android:layout_width="wrap_content"
