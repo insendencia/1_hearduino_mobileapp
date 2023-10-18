@@ -146,8 +146,9 @@
             android:ems="9"
             android:fontFamily="@font/poppins_bold"
             android:text="save"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="21dp"
+            android:background="@drawable/button_background"
             />
 
     </LinearLayout>

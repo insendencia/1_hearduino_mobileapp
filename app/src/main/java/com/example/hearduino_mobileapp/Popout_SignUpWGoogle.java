@@ -14,7 +14,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
 
 public class Popout_SignUpWGoogle extends AppCompatActivity {
 
@@ -75,6 +74,5 @@ public class Popout_SignUpWGoogle extends AppCompatActivity {
         finish();
         Intent i = new Intent(Popout_SignUpWGoogle.this, Activity_SignUp.class);
         startActivity(i);
-
     }
 }

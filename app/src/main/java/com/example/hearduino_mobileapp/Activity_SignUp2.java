@@ -133,6 +133,7 @@ public class Activity_SignUp2 extends AppCompatActivity {
         String getName = name.getText().toString();
         String getEmail = email.getText().toString();
         String getNumber = number.getText().toString();
+        String getCode = code.getText().toString();
         String getRelation = spinner1.getSelectedItem().toString();
 
         //transfer to next activity
@@ -140,6 +141,7 @@ public class Activity_SignUp2 extends AppCompatActivity {
         i.putExtra("name", getName);
         i.putExtra("email", getEmail);
         i.putExtra("number", getNumber);
+        i.putExtra("code", getCode);
         i.putExtra("relation", getRelation);
         startActivity(i);
     }

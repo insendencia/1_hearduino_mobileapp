@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Popout_ReviewInformation"
-    android:background="#D6D6D6"
     android:gravity="center"
     >
 
@@ -14,7 +13,7 @@
         android:layout_height="420dp"
         android:orientation="vertical"
         android:background="@drawable/popout_screen"
-        android:layout_margin="40dp"
+        android:layout_margin="10dp"
         android:layout_gravity="center">
 
         <!-- logo -->
@@ -205,8 +204,7 @@
         </LinearLayout>
 
 
-        <!-- login with google button -->
-        <!-- fix button -->
+        <!-- sign up -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -214,10 +212,10 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppins_extrabold"
             android:text="SIGN UP"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_gravity="center"
-            android:backgroundTint="@color/gray"
-            android:ems="10"/>
+            android:background="@drawable/button_background"
+            android:ems="12"/>
 
     </LinearLayout>
 

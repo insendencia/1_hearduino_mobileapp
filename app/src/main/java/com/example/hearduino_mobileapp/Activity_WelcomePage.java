@@ -36,8 +36,7 @@ public class Activity_WelcomePage extends AppCompatActivity {
     }
 
     public void openSignUp(){
-        mDialog.setContentView(R.layout.popout_signupwgoogle);
-        mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        mDialog.show();
+        Intent i = new Intent(Activity_WelcomePage.this, Popout_SignUpWGoogle.class);
+        startActivity(i);
     }
 }
