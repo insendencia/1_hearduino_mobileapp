@@ -39,14 +39,14 @@
 
         <activity
             android:name=".Popout_SignUpWGoogle"
-            android:parentActivityName=".Activity_Login"/>
+            android:parentActivityName=".Activity_WelcomePage"/>
 
         <activity
-            android:name=".Popout_LoginWGoogle"
-            android:parentActivityName=".Activity_Login"/>
+            android:name=".Popout_Login"
+            android:parentActivityName=".Activity_WelcomePage"/>
 
         <activity
-            android:name=".Activity_Login"
+            android:name=".Activity_WelcomePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -7,37 +7,37 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
-public class Activity_Login extends AppCompatActivity {
+public class Activity_WelcomePage extends AppCompatActivity {
 
-    Button btn; //login button
-    Button btn2; //sign up button
+    Button btnLogin, btnSignUp; //login and sign up button
     Dialog mDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_welcomepage);
 
-        btn = (Button) findViewById(R.id.loginbtn);
-        btn2 = (Button) findViewById(R.id.signupbtn);
+        btnLogin = findViewById(R.id.loginbtn);
+        btnSignUp = findViewById(R.id.signupbtn);
         mDialog = new Dialog(this);
 
-        btn.setOnClickListener(view -> openPopOut());
-        btn2.setOnClickListener(view -> openSignUp());
+        btnLogin.setOnClickListener(view -> openPopOut());
+        btnSignUp.setOnClickListener(view -> openSignUp());
     }
 
     public void openPopOut(){
-        Intent i = new Intent(this, Popout_LoginWGoogle.class);
+        mDialog.setContentView(R.layout.popout_login);
         mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        startActivity(i);
+        mDialog.show();
     }
 
     public void openSignUp(){
-        Intent j = new Intent(this, Popout_SignUpWGoogle.class);
+        mDialog.setContentView(R.layout.popout_signupwgoogle);
         mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        startActivity(j);
+        mDialog.show();
     }
 }
