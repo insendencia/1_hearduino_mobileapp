@@ -94,11 +94,29 @@
             android:textColorHint="@color/black"
             android:textSize="20dp"/>
 
+        <!-- code -->
+        <EditText
+            android:id="@+id/usercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_background"
+            android:ems="11"
+            android:fontFamily="@font/poppins"
+            android:hint="Passcode"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"/>
+
         <!-- image placeholder -->
         <ImageView
             android:id="@+id/userIcon"
-            android:layout_width="275dp"
-            android:layout_height="275dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:background="@drawable/edt_background2"
             android:layout_gravity="center"
             android:layout_marginTop="20dp">
@@ -114,7 +132,7 @@
             android:backgroundTint="@color/white"
             android:ems="10"
             android:fontFamily="@font/poppins_extrabold"
-            android:text="CHANGE PHOTO"
+            android:text="INSERT PHOTO"
             android:textColor="@color/black" />
 
         <!-- save button -->

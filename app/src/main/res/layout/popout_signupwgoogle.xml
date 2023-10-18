@@ -22,6 +22,7 @@
             android:layout_width="275dp"
             android:layout_height="82dp"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:background="@drawable/hearduino_logo"
             android:layout_centerHorizontal="true"/>
 
@@ -31,31 +32,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="TO ACCESS HEARDUINO, PLEASE MAKE SURE TO MEET THE FOLLOWING REQUIREMENTS:"
+            android:text="TO ACCESS HEARDUINO, PLEASE MAKE SURE TO HAVE A GOOGLE PERSONAL ACCOUNT."
             android:textColor="@color/black"
             android:textSize="19dp"
             android:textAlignment="center"
             android:layout_gravity="center"/>
-
-        <!-- requirements text -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="1.  Google Personal Account"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="17dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
-            android:text="2. Google Authenticator Application"
-            android:textColor="@color/black"
-            android:textSize="17dp"
-            android:textAlignment="center"/>
 
         <!-- login with google button -->
         <!-- fix button -->
@@ -64,7 +45,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/signupwgoogle"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/poppins_semibold"
             android:text="Sign Up With Google"
             android:textColor="@color/black"
             android:layout_gravity="center"

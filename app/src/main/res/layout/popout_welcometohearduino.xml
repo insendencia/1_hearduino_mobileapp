@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="325dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Popout_WelcomeToHearduino"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/popout_screen"
+        android:backgroundTint="@color/gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="ACCOUNT CREATED! WELCOME TO"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="30dp"/>
+
+        <!-- logo -->
+        <ImageView
+            android:layout_width="218dp"
+            android:layout_height="64dp"
+            android:background="@drawable/hearduino_logo"
+            android:layout_gravity="center"/>
+
+        <!-- text code -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:text="YOUR HEARDUINO CODE IS:   "
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="HR - 000"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="YOU CAN SHARE THIS CODE TO THREE MORE USERS"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:text="GO TO HOME"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:ems="10"/>
+            <!-- change button color -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

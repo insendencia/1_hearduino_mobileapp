@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class Activity_SignUp2 extends AppCompatActivity {
 
-    TextView name, email, number, cText, rText;
+    TextView name, email, number, code, cText, rText;
     Button cBtn, signupBtn, nBtn, checkBtn, saveBtn;
     EditText insertCode;
 
@@ -36,6 +36,7 @@ public class Activity_SignUp2 extends AppCompatActivity {
         name = findViewById(R.id.setName); //initialize set name
         email = findViewById(R.id.setEmail); //initialize set email
         number = findViewById(R.id.setNum); //initialize set number
+        code = findViewById(R.id.setCode); //initialize set code
         cText = findViewById(R.id.connectAccountText); //initialize text
         rText = findViewById(R.id.relationTextView); //initialize text
 
@@ -59,11 +60,13 @@ public class Activity_SignUp2 extends AppCompatActivity {
         String getName = intent.getStringExtra("name");
         String getNumber = intent.getStringExtra("number");
         String getEmail = intent.getStringExtra("email");
+        String getCode = intent.getStringExtra("code");
 
         //Set Text
         name.setText(getName);
         number.setText(getNumber);
         email.setText(getEmail);
+        code.setText(getCode);
 
         //for the choice drop down
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(Activity_SignUp2.this, R.layout.relation_list, choice);
