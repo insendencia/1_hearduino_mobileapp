@@ -18,16 +18,16 @@
         tools:targetApi="31">
 
         <activity
+            android:name=".Activity_UserHome"
+            android:parentActivityName=".Popout_WelcomeToHearduino"/>
+
+        <activity
+            android:name=".Popout_WelcomeToHearduino"
+            android:parentActivityName=".Popout_ReviewInformation"/>
+
+        <activity
             android:name=".Popout_ReviewInformation"
             android:parentActivityName=".Activity_SignUp2"/>
-
-        <activity
-            android:name=".Popout_RelationToDeaf"
-            android:parentActivityName=".Popout_Dyk"/>
-
-        <activity
-            android:name=".Popout_Dyk"
-            android:parentActivityName=".Activity_SignUp"/>
 
         <activity
             android:name=".Activity_SignUp2"
@@ -35,14 +35,6 @@
 
         <activity
             android:name=".Activity_SignUp"
-            android:parentActivityName=".Popout_SignUpWGoogle"/>
-
-        <activity
-            android:name=".Popout_SignUpWGoogle"
-            android:parentActivityName=".Activity_WelcomePage"/>
-
-        <activity
-            android:name=".Popout_Login"
             android:parentActivityName=".Activity_WelcomePage"/>
 
         <activity

@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="420dp"
+        android:layout_height="520dp"
         android:orientation="vertical"
         android:background="@drawable/popout_screen"
         android:layout_margin="10dp"
@@ -203,13 +203,37 @@
                 />
         </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="ENTER PASSCODE AGAIN TO SIGN UP"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/retypeCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/edt_background"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="PASSCODE"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:inputType="numberPassword"/>
 
         <!-- sign up -->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/signup"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins_extrabold"
             android:text="SIGN UP"
             android:textColor="@color/white"

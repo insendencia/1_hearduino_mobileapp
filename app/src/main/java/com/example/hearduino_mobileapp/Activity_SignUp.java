@@ -20,20 +20,10 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.auth.api.signin.GoogleSignIn;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInClient;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.tasks.Task;
-import com.squareup.picasso.Picasso;
-
 import java.io.IOException;
 
 public class Activity_SignUp extends AppCompatActivity {
 
-    GoogleSignInOptions gso;
-    GoogleSignInClient gsc;
     TextView name, email;
     Button cBtn, sBtn;
     EditText number, code;
@@ -53,20 +43,6 @@ public class Activity_SignUp extends AppCompatActivity {
         number = findViewById(R.id.userphone); //get phone number
         code = findViewById(R.id.usercode); //initialize passcode
         imgview = findViewById(R.id.userIcon); //initialize image view
-
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
-        gsc = GoogleSignIn.getClient(this, gso);
-
-
-        //get data from the account which is signed in
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        if (acct != null) {
-            String personName = acct.getDisplayName();
-            String personEmail = acct.getEmail();
-            //insert to text view
-            name.setText(personName);
-            email.setText(personEmail);
-        }
 
         //change photo
         cBtn.setOnClickListener(new View.OnClickListener() {

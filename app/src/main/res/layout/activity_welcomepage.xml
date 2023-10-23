@@ -34,19 +34,49 @@
             android:layout_gravity="center"
             android:background="@drawable/hearduino_logo" />
 
+        <!-- requirements text -->
+        <EditText
+            android:id="@+id/typeEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/edt_background"
+            android:ems="10"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="EMAIL"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/typePasscode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edt_background"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="PASSCODE"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
         <!-- login button -->
         <Button
             android:id="@+id/loginbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/button_background"
             android:ems="9"
             android:fontFamily="@font/poppins_bold"
             android:text="LOGIN"
             android:textColor="@color/white"
-            android:textSize="21dp"
+            android:textSize="17dp"
             />
 
         <!--sign up here-->
@@ -68,11 +98,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/poppins_bold"
-            android:text="Sign Up with Google"
-            android:textColor="@color/white"
+            android:text="SIGN UP HERE"
+            android:textColor="@color/black"
             android:textSize="20dp"
-            android:background="@drawable/button_background"/>
-
+            android:backgroundTint="@color/white"/>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

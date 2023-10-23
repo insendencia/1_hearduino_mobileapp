@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,7 +23,8 @@ public class Popout_ReviewInformation extends AppCompatActivity {
     Button btnSignUp;
     TextView name, email, num, code, relation, setRelationText;
     DBHelper DB;
-    Boolean checkNameEmail, insertData;
+    EditText retypeCode;
+    Boolean insertData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class Popout_ReviewInformation extends AppCompatActivity {
         code = findViewById(R.id.setCode2);
         relation = findViewById(R.id.setRelation); //initialize relation
         setRelationText = findViewById(R.id.setRelationText); //initialize label
+        retypeCode = findViewById(R.id.retypeCode); //initialize retype code
 
         //Button
         btnSignUp = findViewById(R.id.signup); //initialize sign up
@@ -64,19 +67,30 @@ public class Popout_ReviewInformation extends AppCompatActivity {
             String setNumber = num.getText().toString();
             String setCode = code.getText().toString();
             String setRelation = relation.getText().toString();
+            String ReCode = retypeCode.getText().toString();
             @Override
             public void onClick(View view) {
-                if(checkNameEmail == false){
-                    insertData = DB.insertData(setName, setEmail, setNumber, setCode, setRelation);
+                if(ReCode.equals("")){
+                    Toast.makeText(Popout_ReviewInformation.this, "Please type your passcode again", Toast.LENGTH_SHORT).show();}
+                else {
+                    if(setCode.equals(ReCode)){
+                        Boolean checkuser = DB.checkName(setName);
+                        if(checkuser == false){
+                            insertData = DB.insertData(setName, setEmail, setNumber, setCode, setRelation);
 
-                    if(insertData == true){
-                        Intent i = new Intent(getApplicationContext(), Popout_WelcomeToHearduino.class);
-                        startActivity(i);
-                    } else {
-                        Toast.makeText(Popout_ReviewInformation.this, "Sign Up Failed", Toast.LENGTH_SHORT).show();
+                            if(insertData == true){
+                                Intent i = new Intent(getApplicationContext(), Popout_WelcomeToHearduino.class);
+                                startActivity(i);
+                            } else {
+                                Toast.makeText(Popout_ReviewInformation.this, "Sign Up Failed", Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            Toast.makeText(Popout_ReviewInformation.this, "Account already exists", Toast.LENGTH_SHORT).show();
+                        }
                     }
-                } else {
-                    Toast.makeText(Popout_ReviewInformation.this, "Account already exists", Toast.LENGTH_SHORT).show();
+                    else {
+                        Toast.makeText(Popout_ReviewInformation.this, "Passcode does not match", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
