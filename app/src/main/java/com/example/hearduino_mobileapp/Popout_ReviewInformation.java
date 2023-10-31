@@ -61,38 +61,11 @@ public class Popout_ReviewInformation extends AppCompatActivity {
         code.setText(getCode);
         relation.setText(getRelation);
 
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
-            String setName = name.getText().toString();
-            String setEmail = email.getText().toString();
-            String setNumber = num.getText().toString();
-            String setCode = code.getText().toString();
-            String setRelation = relation.getText().toString();
-            String ReCode = retypeCode.getText().toString();
-            @Override
-            public void onClick(View view) {
-                if(ReCode.equals("")){
-                    Toast.makeText(Popout_ReviewInformation.this, "Please type your passcode again", Toast.LENGTH_SHORT).show();}
-                else {
-                    if(setCode.equals(ReCode)){
-                        Boolean checkuser = DB.checkName(setName);
-                        if(checkuser == false){
-                            insertData = DB.insertData(setName, setEmail, setNumber, setCode, setRelation);
+        btnSignUp.setOnClickListener(view -> openWelcome());
+    }
 
-                            if(insertData == true){
-                                Intent i = new Intent(getApplicationContext(), Popout_WelcomeToHearduino.class);
-                                startActivity(i);
-                            } else {
-                                Toast.makeText(Popout_ReviewInformation.this, "Sign Up Failed", Toast.LENGTH_SHORT).show();
-                            }
-                        } else {
-                            Toast.makeText(Popout_ReviewInformation.this, "Account already exists", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    else {
-                        Toast.makeText(Popout_ReviewInformation.this, "Passcode does not match", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            }
-        });
+    public void openWelcome(){
+        Intent i = new Intent(Popout_ReviewInformation.this, Popout_WelcomeToHearduino.class);
+        startActivity(i);
     }
 }

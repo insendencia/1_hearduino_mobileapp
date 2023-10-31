@@ -1,6 +1,7 @@
 package com.example.hearduino_mobileapp;
 
 import android.content.Intent;
+import android.graphics.RenderNode;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -24,9 +25,11 @@ public class Popout_WelcomeToHearduino extends AppCompatActivity {
         btnhome = findViewById(R.id.homebtn);
 
         //unique identifier id
-        UUID incCounter = UUID.randomUUID();
+        Random random = new Random();
+        int randomNumber = random.nextInt(100) + 1;
 
-        hearduinoCode.setText(incCounter.toString());
+        String rNumber = Integer.toString(randomNumber);
+        hearduinoCode.setText(rNumber);
 
         btnhome.setOnClickListener(view -> openLogin());
     }
