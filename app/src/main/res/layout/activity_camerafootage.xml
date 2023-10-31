@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Activity_AboutPage">
+    android:layout_gravity="center"
+    tools:context=".Activity_CameraFootage">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,32 +14,11 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:background="@drawable/header_background"
-            android:text="ABOUT"
+            android:text="CAMERA FOOTAGE"
             android:textColor="@color/white"
             android:textSize="30dp"
             android:fontFamily="@font/poppins_extrabold"
             android:padding="5dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/gray_background"
-            android:fontFamily="@font/poppins_medium"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="Hearduino is an application that serves as an alernative for [insert more description
-here]"
-            android:textColor="@color/black"
-            android:textSize="20dp" />
-
     </LinearLayout>
 
     <!-- menu button -->

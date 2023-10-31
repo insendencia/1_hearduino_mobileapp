@@ -7,9 +7,18 @@
     tools:context=".Activity_UserHome">
 
     <include layout="@layout/header_user_home"/>
-    <include layout="@layout/menu_button"/>
 
     <!-- battery percentage of wearable device -->
 
+    <!-- menu button -->
+    <Button
+        android:id="@+id/menubutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_background"
+        android:text="MENU"
+        android:fontFamily="@font/poppins_extrabold"
+        android:textSize="30dp"/>
 
 </RelativeLayout>

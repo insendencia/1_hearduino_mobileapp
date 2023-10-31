@@ -22,6 +22,7 @@
 
         <!-- menu buttons -->
         <TextView
+            android:id="@+id/homebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_extrabold"
@@ -30,6 +31,7 @@
             android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/camerafootagebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_extrabold"
@@ -38,6 +40,7 @@
             android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/doorbellhistorybtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_extrabold"
@@ -46,6 +49,7 @@
             android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/registerbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_extrabold"
@@ -54,6 +58,7 @@
             android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/listregisterbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_extrabold"
@@ -62,6 +67,7 @@
             android:textSize="23dp" />
 
         <TextView
+            android:id="@+id/aboutbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_extrabold"
@@ -70,6 +76,7 @@
             android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/signoutbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_extrabold"
