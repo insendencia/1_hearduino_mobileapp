@@ -22,6 +22,14 @@
             android:parentActivityName=".Activity_UserHome"/>
 
         <activity
+            android:name=".Activity_ListOfRegisteredVisitors"
+            android:parentActivityName=".Activity_UserHome"/>
+
+        <activity
+            android:name=".Activity_DoorbellHistory"
+            android:parentActivityName=".Activity_UserHome"/>
+
+        <activity
             android:name=".Activity_CameraFootage"
             android:parentActivityName=".Activity_UserHome"/>
 

@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.w3c.dom.Text;
+
 public class Activity_UserHome extends AppCompatActivity {
 
     Button menu;
@@ -44,7 +46,7 @@ public class Activity_UserHome extends AppCompatActivity {
         //insert condition for each button
         TextView home = dialog.findViewById(R.id.homebtn);
         TextView cameraFootage = dialog.findViewById(R.id.camerafootagebtn);
-        //TextView doorbellHistory = dialog.findViewById(R.id.doorbellhistorybtn);
+        TextView doorbellHistory = dialog.findViewById(R.id.doorbellhistorybtn);
         TextView about = dialog.findViewById(R.id.aboutbtn);
 
         home.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +64,15 @@ public class Activity_UserHome extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        doorbellHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Activity_UserHome.this, Activity_DoorbellHistory.class);
+                startActivity(i);
+            }
+        });
+
 
         about.setOnClickListener(new View.OnClickListener() {
             @Override
