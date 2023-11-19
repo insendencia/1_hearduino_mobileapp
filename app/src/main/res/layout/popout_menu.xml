@@ -49,7 +49,7 @@
             android:textSize="30dp" />
 
         <TextView
-            android:id="@+id/registerbtn"
+            android:id="@+id/registervisitorbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_extrabold"
@@ -58,7 +58,7 @@
             android:textSize="30dp" />
 
         <TextView
-            android:id="@+id/listregisterbtn"
+            android:id="@+id/listofregistervisitorsbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_extrabold"

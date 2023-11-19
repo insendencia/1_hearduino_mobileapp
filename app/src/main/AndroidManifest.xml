@@ -26,6 +26,10 @@
             android:parentActivityName=".Activity_UserHome"/>
 
         <activity
+            android:name=".Activity_RegisterVisitor"
+            android:parentActivityName=".Activity_UserHome"/>
+
+        <activity
             android:name=".Activity_DoorbellHistory"
             android:parentActivityName=".Activity_UserHome"/>
 

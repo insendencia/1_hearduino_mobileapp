@@ -1,5 +1,6 @@
 package com.example.hearduino_mobileapp;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -47,6 +48,8 @@ public class Activity_UserHome extends AppCompatActivity {
         TextView home = dialog.findViewById(R.id.homebtn);
         TextView cameraFootage = dialog.findViewById(R.id.camerafootagebtn);
         TextView doorbellHistory = dialog.findViewById(R.id.doorbellhistorybtn);
+        TextView registerVisitor = dialog.findViewById(R.id.registervisitorbtn);
+        TextView listRegisterVisitor = dialog.findViewById(R.id.listofregistervisitorsbtn);
         TextView about = dialog.findViewById(R.id.aboutbtn);
 
         home.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +76,21 @@ public class Activity_UserHome extends AppCompatActivity {
             }
         });
 
+        registerVisitor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent j = new Intent(Activity_UserHome.this, Activity_RegisterVisitor.class);
+                startActivity(j);
+            }
+        });
+
+        listRegisterVisitor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent j = new Intent(Activity_UserHome.this, Activity_ListOfRegisteredVisitors.class);
+                startActivity(j);
+            }
+        });
 
         about.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    tools:context=".Activity_RegisterVisitor2">
+
+    <LinearLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/header_background"
+            android:text="REGISTER VISITOR"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <!-- name template -->
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/header_title"/>
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_below="@id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="NAME: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <TextView
+            android:id="@+id/rv_nametemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLACEHOLDER"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"/>
+    </LinearLayout>
+
+    <!-- relation template -->
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/view2"/>
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_below="@id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="PASSCODE: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <TextView
+            android:id="@+id/rv_passcodetemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="PLACEHOLDER"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"/>
+    </LinearLayout>
+
+    <!-- relation template -->
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/view1"/>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="RELATION: "
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <TextView
+            android:id="@+id/rv_relationtemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="PLACEHOLDER"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"/>
+    </LinearLayout>
+
+    <!-- text label -->
+    <LinearLayout
+        android:id="@+id/textvideo"
+        android:layout_below="@id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:text="VIDEO OF FACE FEATURES"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_bold"/>
+    </LinearLayout>
+
+    <!-- video template -->
+    <LinearLayout
+        android:id="@+id/videotemplate"
+        android:layout_below="@id/textvideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <VideoView
+            android:id="@+id/video_layout"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="70dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_below="@id/videotemplate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/insertvideobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:text="INSERT VIDEO"
+            android:background="@drawable/edt_background"
+            android:fontFamily="@font/poppins"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <!-- menu button -->
+    <Button
+        android:id="@+id/menubutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_background"
+        android:text="MENU"
+        android:fontFamily="@font/poppins_extrabold"
+        android:textSize="30dp"/>
+
+</RelativeLayout>
