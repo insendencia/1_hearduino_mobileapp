@@ -24,9 +24,8 @@ import java.io.IOException;
 
 public class Activity_SignUp extends AppCompatActivity {
 
-    TextView name, email;
     Button cBtn, sBtn;
-    EditText number, code;
+    EditText name, username, code;
     ImageView imgview;
     Uri cPic;
     private static final int PICK_IMAGE = 1;
@@ -39,8 +38,7 @@ public class Activity_SignUp extends AppCompatActivity {
         sBtn = findViewById(R.id.savebtn); //initialize save button
         cBtn = findViewById(R.id.CHbutton); //initialize change photo button
         name = findViewById(R.id.username); //get name
-        email = findViewById(R.id.useremail); //get email
-        number = findViewById(R.id.userphone); //get phone number
+        username = findViewById(R.id.userusername); //get username
         code = findViewById(R.id.usercode); //initialize passcode
         imgview = findViewById(R.id.userIcon); //initialize image view
 
@@ -78,16 +76,14 @@ public class Activity_SignUp extends AppCompatActivity {
     public void openSignUp2(){
         //get data from views
         String getName = name.getText().toString();
-        String getEmail = email.getText().toString();
-        String getNumber = number.getText().toString();
+        String getUsername = username.getText().toString();
         String getCode = code.getText().toString();
 
         //transfer to next activity
         Intent i = new Intent(this, Activity_SignUp2.class);
-        i.putExtra("name", getName);
-        i.putExtra("email", getEmail);
-        i.putExtra("number", getNumber);
-        i.putExtra("code", getCode);
+        i.putExtra("Name", getName);
+        i.putExtra("Username", getUsername);
+        i.putExtra("Code", getCode);
         startActivity(i);
     }
 }

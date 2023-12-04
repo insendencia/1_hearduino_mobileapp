@@ -58,9 +58,9 @@
             android:textColorHint="@color/black"
             android:textSize="20dp"  />
 
-        <!-- email -->
+        <!-- username -->
         <EditText
-            android:id="@+id/useremail"
+            android:id="@+id/userusername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -69,25 +69,7 @@
             android:background="@drawable/edt_background"
             android:ems="10"
             android:fontFamily="@font/poppins"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:paddingLeft="10dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:textSize="20dp" />
-
-        <!-- phone number-->
-        <EditText
-            android:id="@+id/userphone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edt_background"
-            android:ems="10"
-            android:fontFamily="@font/poppins"
-            android:hint="Phone Number"
+            android:hint="Username"
             android:inputType="phone"
             android:paddingLeft="10dp"
             android:textColor="@color/black"
@@ -115,8 +97,8 @@
         <!-- image placeholder -->
         <ImageView
             android:id="@+id/userIcon"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:background="@drawable/edt_background2"
             android:layout_gravity="center"
             android:layout_marginTop="20dp">

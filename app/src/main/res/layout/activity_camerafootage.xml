@@ -7,8 +7,9 @@
     tools:context=".Activity_CameraFootage">
 
     <LinearLayout
+        android:id="@+id/layout_header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -19,6 +20,98 @@
             android:textSize="30dp"
             android:fontFamily="@font/poppins_extrabold"
             android:padding="5dp"/>
+    </LinearLayout>
+
+    <!-- camera monitor -->
+    <LinearLayout
+        android:id="@+id/monitorlayout"
+        android:layout_below="@id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+
+        <ImageView
+            android:id="@+id/monitor"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="360dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/edt_background"/>
+    </LinearLayout>
+
+    <!-- ip address layout -->
+    <LinearLayout
+        android:id="@+id/iplayout"
+        android:layout_below="@id/monitorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ipaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLACEHOLDER"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginLeft="105dp"/>
+    </LinearLayout>
+
+    <!-- connect button layout -->
+    <LinearLayout
+        android:id="@+id/connectlayout"
+        android:layout_below="@id/iplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="55dp"
+            android:ems="9"
+            android:text="CONNECT"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_semibold"/>
+    </LinearLayout>
+
+    <!-- flash button layout -->
+    <LinearLayout
+        android:id="@+id/flashlayout"
+        android:layout_below="@id/connectlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="55dp"
+            android:ems="9"
+            android:text="FLASH"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_semibold"/>
+    </LinearLayout>
+
+    <!-- ip address layout -->
+    <LinearLayout
+        android:id="@+id/rssilayout"
+        android:layout_below="@id/flashlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rssi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="PLACEHOLDER"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginLeft="105dp"/>
     </LinearLayout>
 
     <!-- menu button -->

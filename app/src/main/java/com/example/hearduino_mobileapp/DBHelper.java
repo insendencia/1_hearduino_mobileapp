@@ -18,8 +18,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase myDatabase) {
-        myDatabase.execSQL("create Table users(name TEXT primary key, email TEXT primary key, number TEXT primary key, code TEXT primary key, relation TEXT primary key" +
-                ", hrCode TEXT primary key)");
+        myDatabase.execSQL("create Table users(name TEXT primary key, username TEXT primary key, code TEXT primary key, relation TEXT primary key, hrCode TEXT primary key)");
     }
 
     @Override
@@ -27,14 +26,14 @@ public class DBHelper extends SQLiteOpenHelper {
         myDatabase.execSQL("drop Table if exists users");
     }
 
-    public Boolean insertData(String name, String email, String number, String code, String relation){
+    public Boolean insertData(String name, String username, String code, String relation, String hrCode){
         SQLiteDatabase myDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("Name", name);
-        contentValues.put("Email", email);
-        contentValues.put("Number", number);
+        contentValues.put("Username", username);
         contentValues.put("Code", code);
         contentValues.put("Relation", relation);
+        contentValues.put("HRCode", hrCode);
         long result = myDatabase.insert("account", null, contentValues);
         if(result == -1){
             return false;
@@ -43,9 +42,9 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
-    public Boolean checkName(String email){
+    public Boolean checkUName(String username){
         SQLiteDatabase myDatabase = this.getWritableDatabase();
-        Cursor cursor = myDatabase.rawQuery("Select * from users where email = ?", new String[] {email});
+        Cursor cursor = myDatabase.rawQuery("Select * from users where email = ?", new String[] {username});
         if(cursor.getCount() > 0){
             return true;
         } else {
@@ -53,9 +52,9 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
-    public Boolean checkEmailCode(String email, String code){
+    public Boolean checkUNameCode(String username, String code){
         SQLiteDatabase myDatabase = this.getWritableDatabase();
-        Cursor cursor = myDatabase.rawQuery("Select * from users where email = ? and code = ?", new String[] {email,code});
+        Cursor cursor = myDatabase.rawQuery("Select * from users where email = ? and code = ?", new String[] {username,code});
         if(cursor.getCount() > 0){
             return true;
         } else {

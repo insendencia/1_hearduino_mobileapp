@@ -21,7 +21,7 @@ import com.google.android.gms.tasks.Task;
 public class Popout_ReviewInformation extends AppCompatActivity {
 
     Button btnSignUp;
-    TextView name, email, num, code, relation, setRelationText;
+    TextView name, username, code, relation, setRelationText;
     DBHelper DB;
     EditText retypeCode;
     Boolean insertData;
@@ -33,8 +33,7 @@ public class Popout_ReviewInformation extends AppCompatActivity {
 
         //Text View
         name = findViewById(R.id.setName); //initialize name
-        email = findViewById(R.id.setEmail); //initialize email
-        num = findViewById(R.id.setNum); //initialize phone number
+        username = findViewById(R.id.setUName); //initialize phone number
         code = findViewById(R.id.setCode2);
         relation = findViewById(R.id.setRelation); //initialize relation
         setRelationText = findViewById(R.id.setRelationText); //initialize label
@@ -49,15 +48,13 @@ public class Popout_ReviewInformation extends AppCompatActivity {
         //Get text from Intent
         Intent intent = getIntent();
         String getName = intent.getStringExtra("name");
-        String getNumber = intent.getStringExtra("number");
-        String getEmail = intent.getStringExtra("email");
+        String getUsername = intent.getStringExtra("username");
         String getCode = intent.getStringExtra("code");
         String getRelation = intent.getStringExtra("relation");
 
         //Set Text
         name.setText(getName);
-        num.setText(getNumber);
-        email.setText(getEmail);
+        username.setText(getUsername);
         code.setText(getCode);
         relation.setText(getRelation);
 

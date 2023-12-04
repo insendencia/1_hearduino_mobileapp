@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class Activity_SignUp2 extends AppCompatActivity {
 
-    TextView name, email, number, code, cText, rText;
+    TextView name, username, code, cText, rText;
     Button cBtn, signupBtn, nBtn, checkBtn, saveBtn;
     EditText insertCode;
 
@@ -34,8 +34,7 @@ public class Activity_SignUp2 extends AppCompatActivity {
 
         //TextView
         name = findViewById(R.id.setName); //initialize set name
-        email = findViewById(R.id.setEmail); //initialize set email
-        number = findViewById(R.id.setNum); //initialize set number
+        username = findViewById(R.id.setUsername); //initialize set username
         code = findViewById(R.id.setCode); //initialize set code
         cText = findViewById(R.id.connectAccountText); //initialize text
         rText = findViewById(R.id.relationTextView); //initialize text
@@ -58,14 +57,12 @@ public class Activity_SignUp2 extends AppCompatActivity {
         //Get text from Intent
         Intent intent = getIntent();
         String getName = intent.getStringExtra("name");
-        String getNumber = intent.getStringExtra("number");
-        String getEmail = intent.getStringExtra("email");
+        String getUsername = intent.getStringExtra("username");
         String getCode = intent.getStringExtra("code");
 
         //Set Text
         name.setText(getName);
-        number.setText(getNumber);
-        email.setText(getEmail);
+        username.setText(getUsername);
         code.setText(getCode);
 
         //for the choice drop down
@@ -131,16 +128,14 @@ public class Activity_SignUp2 extends AppCompatActivity {
     public void openReviewInformation(){
         //get data from views
         String getName = name.getText().toString();
-        String getEmail = email.getText().toString();
-        String getNumber = number.getText().toString();
+        String getUsername = username.getText().toString();
         String getCode = code.getText().toString();
         String getRelation = spinner1.getSelectedItem().toString();
 
         //transfer to next activity
         Intent i = new Intent(this, Popout_ReviewInformation.class);
         i.putExtra("name", getName);
-        i.putExtra("email", getEmail);
-        i.putExtra("number", getNumber);
+        i.putExtra("username", getUsername);
         i.putExtra("code", getCode);
         i.putExtra("relation", getRelation);
         startActivity(i);

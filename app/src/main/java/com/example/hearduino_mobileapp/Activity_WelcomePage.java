@@ -10,13 +10,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Activity_WelcomePage extends AppCompatActivity {
 
-    Button btnLogin, btnSignUp; //login and sign up button
+    Button btnLogin; //login and sign up button
     //Dialog mDialog;
-    EditText email, code;
+    EditText username, code;
+    TextView btnSignUp;
     DBHelper DB;
 
     @Override
@@ -27,10 +29,10 @@ public class Activity_WelcomePage extends AppCompatActivity {
 
         //initialize button
         btnLogin = findViewById(R.id.loginbtn);
-        btnSignUp = findViewById(R.id.signupbtn);
+        btnSignUp = findViewById(R.id.btntext);
 
         //initialize edit text
-        email = findViewById(R.id.typeEmail);
+        username = findViewById(R.id.typeUsername);
         code = findViewById(R.id.typePasscode);
         //mDialog = new Dialog(this);
 
@@ -40,15 +42,15 @@ public class Activity_WelcomePage extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String Email = email.getText().toString();
+                String Username = username.getText().toString();
                 String Code = code.getText().toString();
 
-                if(Email.equals("")|| Code.equals("")){
+                if(Username.equals("")|| Code.equals("")){
                     Toast.makeText(Activity_WelcomePage.this,"Please fill in all credentials", Toast.LENGTH_SHORT).show();
                 } else {
-                    Boolean checkEmailCode = DB.checkEmailCode(Email, Code);
+                    Boolean checkUNameCode = DB.checkUNameCode(Username, Code);
 
-                    if(checkEmailCode == true){
+                    if(checkUNameCode == true){
                         Toast.makeText(Activity_WelcomePage.this, "Welcome!", Toast.LENGTH_SHORT).show();
                         Intent i = new Intent(getApplicationContext(), Activity_UserHome.class);
                         startActivity(i);

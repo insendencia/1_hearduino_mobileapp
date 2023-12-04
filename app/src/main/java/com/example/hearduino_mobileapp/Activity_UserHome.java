@@ -48,7 +48,6 @@ public class Activity_UserHome extends AppCompatActivity {
         TextView home = dialog.findViewById(R.id.homebtn);
         TextView cameraFootage = dialog.findViewById(R.id.camerafootagebtn);
         TextView doorbellHistory = dialog.findViewById(R.id.doorbellhistorybtn);
-        TextView registerVisitor = dialog.findViewById(R.id.registervisitorbtn);
         TextView listRegisterVisitor = dialog.findViewById(R.id.listofregistervisitorsbtn);
         TextView about = dialog.findViewById(R.id.aboutbtn);
 
@@ -73,14 +72,6 @@ public class Activity_UserHome extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(Activity_UserHome.this, Activity_DoorbellHistory.class);
                 startActivity(i);
-            }
-        });
-
-        registerVisitor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent j = new Intent(Activity_UserHome.this, Activity_RegisterVisitor.class);
-                startActivity(j);
             }
         });
 
