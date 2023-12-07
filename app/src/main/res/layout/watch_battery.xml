@@ -23,11 +23,29 @@
             android:fontFamily="@font/poppins_semibold"
             android:textColor="@color/black"/>
 
-        <ProgressBar
-            android:id="@+id/pgbar2"
-            android:layout_gravity="center"
-            android:layout_width="75dp"
-            android:layout_height="75dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <ProgressBar
+                android:id="@+id/pgbar2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/pgtext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"/>
+
+        </RelativeLayout>
     </LinearLayout>
 
 </LinearLayout>

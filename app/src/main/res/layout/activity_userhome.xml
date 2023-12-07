@@ -52,8 +52,25 @@
 
         </LinearLayout>
 
+        <!-- authorized users -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="5dp" />
+        <include layout="@layout/authorized_users"/>
+
+        <!-- doorbell activity -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="5dp" />
+        <include layout="@layout/doorbell_activity"/>
 
         <!-- menu button -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="5dp" />
         <Button
             android:id="@+id/menubutton"
             android:layout_width="match_parent"
