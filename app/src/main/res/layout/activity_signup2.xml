@@ -239,7 +239,9 @@
                 android:layout_marginLeft="50dp"
                 android:fontFamily="@font/poppins"
                 android:hint="USERNAME"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:ems="7"
+                android:gravity="center"/>
 
             <!-- check if it exists button -->
             <Button
