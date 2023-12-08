@@ -238,7 +238,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="50dp"
                 android:fontFamily="@font/poppins"
-                android:hint="INSERT HEARDUINO CODE"
+                android:hint="USERNAME"
                 android:visibility="gone" />
 
             <!-- check if it exists button -->

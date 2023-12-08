@@ -4,6 +4,7 @@
     package="com.example.hearduino_mobileapp">
 
     <!-- permission to access internet from the app -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- permission to access bluetooth -->

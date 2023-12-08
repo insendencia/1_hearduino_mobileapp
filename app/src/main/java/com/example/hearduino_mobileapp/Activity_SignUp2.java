@@ -121,11 +121,15 @@ public class Activity_SignUp2 extends AppCompatActivity {
             }
         });
 
-        signupBtn.setOnClickListener(v -> openReviewInformation());
+        signupBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { showReviewInformation();}
+        });
 
     }
 
-    public void openReviewInformation(){
+    public void showReviewInformation(){
+
         //get data from views
         String getName = name.getText().toString();
         String getUsername = username.getText().toString();

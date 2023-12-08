@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="350dp"
-    android:layout_height="325dp"
+    android:layout_height="295dp"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Popout_WelcomeToHearduino"
     android:layout_gravity="center"
@@ -30,42 +30,12 @@
             android:background="@drawable/hearduino_logo"
             android:layout_gravity="center"/>
 
-        <!-- text code -->
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="2dp"
-            android:layout_margin="5dp"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_gravity="center"
-                android:text="YOUR HEARDUINO CODE IS:   "
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppins_semibold"
-                android:textSize="16dp"/>
-
-            <TextView
-                android:id="@+id/hearduinoCode"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="HR - 000"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppins_semibold"
-                android:textSize="16dp"/>
-        </LinearLayout>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:text="YOU CAN SHARE THIS CODE TO THREE MORE USERS"
+            android:text="YOU CAN SHARE YOUR USERNAME TO THREE MORE USERS"
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_semibold"
             android:textSize="15dp"/>

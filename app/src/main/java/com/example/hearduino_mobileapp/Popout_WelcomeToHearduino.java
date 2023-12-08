@@ -13,7 +13,6 @@ import java.util.UUID;
 
 public class Popout_WelcomeToHearduino extends AppCompatActivity {
 
-    TextView hearduinoCode;
     Button btnhome;
 
     @Override
@@ -21,15 +20,7 @@ public class Popout_WelcomeToHearduino extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.popout_welcometohearduino);
 
-        hearduinoCode = findViewById(R.id.hearduinoCode);
         btnhome = findViewById(R.id.homebtn);
-
-        //unique identifier id
-        Random random = new Random();
-        int randomNumber = random.nextInt(100) + 1;
-
-        String rNumber = Integer.toString(randomNumber);
-        hearduinoCode.setText(rNumber);
 
         btnhome.setOnClickListener(view -> openLogin());
     }

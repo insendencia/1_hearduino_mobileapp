@@ -37,7 +37,6 @@ public class Popout_ReviewInformation extends AppCompatActivity {
         code = findViewById(R.id.setCode2);
         relation = findViewById(R.id.setRelation); //initialize relation
         setRelationText = findViewById(R.id.setRelationText); //initialize label
-        retypeCode = findViewById(R.id.retypeCode); //initialize retype code
 
         //Button
         btnSignUp = findViewById(R.id.signup); //initialize sign up

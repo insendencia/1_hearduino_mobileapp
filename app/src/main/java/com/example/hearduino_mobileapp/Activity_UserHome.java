@@ -10,7 +10,9 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,20 +32,20 @@ import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Set;
 import java.util.UUID;
 
 public class Activity_UserHome extends AppCompatActivity {
 
-    //for bluetooth
-    private BluetoothAdapter bluetoothAdapter;
-    private BluetoothSocket bluetoothSocket;
-    private OutputStream outputStream;
+    //bluetooth
+    BluetoothAdapter bluetoothAdapter;
+    BluetoothDevice bluetoothDevice;
+    BluetoothSocket bluetoothSocket;
+    OutputStream outputStream;
 
-    private static final String DEVICE_ADDRESS = "01:23:45:67:95:ED"; //BLUETOOTH ADDRESS
-    private static final UUID SERIAL_UUID = UUID.fromString("00002A23-0000-1000-8000-00805F9B34FB");
+    private String macAddress = "";
+    UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
-    private static final int REQUEST_ENABLE_BT = 1;
-    private static final int REQUEST_BLUETOOTH_PERMISSION = 1;
 
     //for the vibration intensity
     private TextView textView;
@@ -75,20 +77,23 @@ public class Activity_UserHome extends AppCompatActivity {
         pgText1 = findViewById(R.id.pgtext1);
         pgText2 = findViewById(R.id.pgtext2);
 
-        ////////////////////////////////////////////////////////////////////////////////////////////
+        //bluetooth
+        if (ActivityCompat.checkSelfPermission(Activity_UserHome.this, android.Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_DENIED) {
+            if (Build.VERSION.SDK_INT > 31) {
+                ActivityCompat.requestPermissions(Activity_UserHome.this, new String[]{android.Manifest.permission.BLUETOOTH_CONNECT}, 100);
+                return;
+            }
+        }
 
+
+        //setup seekbar
         textView = findViewById(R.id.seekbarpercentage);
         seekBar = findViewById(R.id.seekbar);
 
-        // Initialize Bluetooth
-        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-
-        //setup seekbar
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean b) {
                 textView.setText("" + progress + "%");
-                //sendIntensityToArduino(progress);
             }
 
             @Override
