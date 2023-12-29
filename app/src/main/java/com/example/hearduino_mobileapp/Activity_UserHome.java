@@ -43,10 +43,6 @@ public class Activity_UserHome extends AppCompatActivity {
     BluetoothSocket bluetoothSocket;
     OutputStream outputStream;
 
-    private String macAddress = "";
-    UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
-
-
     //for the vibration intensity
     private TextView textView;
     private SeekBar seekBar;
@@ -78,13 +74,6 @@ public class Activity_UserHome extends AppCompatActivity {
         pgText2 = findViewById(R.id.pgtext2);
 
         //bluetooth
-        if (ActivityCompat.checkSelfPermission(Activity_UserHome.this, android.Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_DENIED) {
-            if (Build.VERSION.SDK_INT > 31) {
-                ActivityCompat.requestPermissions(Activity_UserHome.this, new String[]{android.Manifest.permission.BLUETOOTH_CONNECT}, 100);
-                return;
-            }
-        }
-
 
         //setup seekbar
         textView = findViewById(R.id.seekbarpercentage);

@@ -17,7 +17,7 @@
         <!-- welcome header -->
         <View
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            android:layout_height="5dp"
             android:layout_margin="5dp"/>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -40,38 +40,58 @@
                 android:background="@drawable/hearduino_logo" />
         </LinearLayout>
 
+        <!-- image placeholder -->
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/edt_background2"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+        </ImageView>
+
+        <!-- change photo button -->
+        <TextView
+            android:id="@+id/CHbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="INSERT PHOTO"
+            android:textColor="@color/black" />
+
         <!-- name -->
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/fullname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/edt_background"
-            android:ems="10"
+            android:ems="11"
             android:fontFamily="@font/poppins"
             android:hint="Name"
             android:inputType="text"
-            android:paddingLeft="10dp"
+            android:padding="5dp"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="20dp"  />
 
         <!-- username -->
         <EditText
-            android:id="@+id/userusername"
+            android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/edt_background"
-            android:ems="10"
+            android:ems="11"
             android:fontFamily="@font/poppins"
             android:hint="Username"
-            android:inputType="phone"
-            android:paddingLeft="10dp"
+            android:padding="5dp"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="20dp"/>
@@ -83,39 +103,109 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/edt_background"
-            android:ems="10"
+            android:ems="11"
             android:fontFamily="@font/poppins"
             android:hint="Passcode"
             android:inputType="numberPassword"
-            android:paddingLeft="10dp"
+            android:padding="5dp"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="20dp"/>
 
-        <!-- image placeholder -->
-        <ImageView
-            android:id="@+id/userIcon"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:background="@drawable/edt_background2"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp">
-        </ImageView>
-
-        <!-- change photo button -->
-        <Button
-            android:id="@+id/CHbutton"
+        <!-- question -->
+        <TextView
+            android:id="@+id/Qtext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:backgroundTint="@color/white"
-            android:ems="10"
-            android:fontFamily="@font/poppins_extrabold"
-            android:text="INSERT PHOTO"
-            android:textColor="@color/black" />
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="DO YOU HAVE HEARING DISABILITIES?"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/YoNtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins"
+            android:hint="Yes/No"
+            android:ems="9"
+            android:gravity="center"/>
+
+        <!-- connecct account -->
+        <TextView
+            android:id="@+id/connectAccountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="CONNECT TO AN EXISTING ACCOUNT"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_margin="1dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/insertUName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/poppins"
+                android:hint="Username"
+                android:ems="7"
+                android:gravity="center"/>
+
+            <!-- check if it exists button -->
+            <Button
+                android:id="@+id/checkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:background="@drawable/button_background"
+                android:text="CHECK"
+                android:textSize="15dp"
+                android:ems="5"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/relationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="RELATION TO THE CONNECTED ACCOUNT"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinner_relations"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:popupBackground="@color/gray"
+            android:spinnerMode="dropdown" />
 
         <!-- save button -->
         <Button
@@ -123,13 +213,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/gray"
-            android:ems="9"
+            android:ems="11"
             android:fontFamily="@font/poppins_bold"
-            android:text="save"
+            android:text="sign up"
             android:textColor="@color/white"
-            android:textSize="21dp"
+            android:textSize="18dp"
             android:background="@drawable/button_background"
             />
 

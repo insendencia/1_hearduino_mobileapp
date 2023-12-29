@@ -40,14 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="23dp"
-                    android:text="Your code is:   "
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:fontFamily="@font/poppins_medium"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="[code]"
+                    android:text="[USERNAME]"
                     android:textColor="@color/white"
                     android:textSize="20dp"
                     android:fontFamily="@font/poppins_medium"/>

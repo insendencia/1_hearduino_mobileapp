@@ -1,21 +1,15 @@
 package com.example.hearduino_mobileapp;
 
-import android.app.Dialog;
-import android.content.Intent;
+import android.os.Bundle;
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
-import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -32,13 +26,12 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Activity_CameraFootage extends AppCompatActivity implements View.OnClickListener{
+public class Activity_CameraFootage extends AppCompatActivity implements View.OnClickListener {
 
-    Button menu;
-
-    private static final String TAG = "Activity_CameraFootage::";
+    private static final String TAG = "MainActivity::";
 
     private HandlerThread stream_thread,flash_thread,rssi_thread;
     private Handler stream_handler,flash_handler,rssi_handler;
@@ -52,26 +45,17 @@ public class Activity_CameraFootage extends AppCompatActivity implements View.On
     private final int ID_RSSI = 202;
 
     private boolean flash_on_off = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camerafootage);
-
         findViewById(R.id.connect).setOnClickListener(this);
         findViewById(R.id.flash).setOnClickListener(this);
         flash_button = findViewById(R.id.flash);
         monitor = findViewById(R.id.monitor);
         rssi_text = findViewById(R.id.rssi);
-        ip_text = findViewById(R.id.ipaddress);
-        menu = findViewById(R.id.menubutton);
-
-        //menu button
-        menu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showDialog();
-            }
-        });
+        ip_text = findViewById(R.id.ip);
 
         ip_text.setText("192.168.110.253");
 
@@ -86,66 +70,6 @@ public class Activity_CameraFootage extends AppCompatActivity implements View.On
         rssi_thread = new HandlerThread("http");
         rssi_thread.start();
         rssi_handler = new HttpHandler(rssi_thread.getLooper());
-    }
-
-    //menu button
-    private void showDialog(){
-
-        final Dialog dialog = new Dialog(this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.popout_menu);
-
-        //insert condition for each button
-        TextView home = dialog.findViewById(R.id.homebtn);
-        TextView cameraFootage = dialog.findViewById(R.id.camerafootagebtn);
-        TextView doorbellHistory = dialog.findViewById(R.id.doorbellhistorybtn);
-        TextView listRegisterVisitor = dialog.findViewById(R.id.listofregistervisitorsbtn);
-        TextView about = dialog.findViewById(R.id.aboutbtn);
-
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Activity_CameraFootage.this, Activity_UserHome.class);
-                startActivity(i);
-            }
-        });
-
-        cameraFootage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Activity_CameraFootage.this, Activity_CameraFootage.class);
-                startActivity(i);
-            }
-        });
-
-        doorbellHistory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Activity_CameraFootage.this, Activity_DoorbellHistory.class);
-                startActivity(i);
-            }
-        });
-
-        listRegisterVisitor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent j = new Intent(Activity_CameraFootage.this, Activity_ListOfRegisteredVisitors.class);
-                startActivity(j);
-            }
-        });
-
-        about.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Activity_CameraFootage.this, Activity_AboutPage.class);
-                startActivity(i);
-            }
-        });
-
-        dialog.show();
-        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog.getWindow().setGravity(Gravity.BOTTOM);
     }
 
     @Override
@@ -228,6 +152,7 @@ public class Activity_CameraFootage extends AppCompatActivity implements View.On
             e.printStackTrace();
         }
     }
+
     private void GetRSSI() {
         rssi_handler.sendEmptyMessageDelayed(ID_RSSI,500);
 
@@ -380,4 +305,5 @@ public class Activity_CameraFootage extends AppCompatActivity implements View.On
             e.printStackTrace();
         }
     }
+
 }

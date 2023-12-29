@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="350dp"
-    android:layout_height="295dp"
+    android:layout_height="310dp"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Popout_WelcomeToHearduino"
     android:layout_gravity="center"
@@ -19,7 +19,7 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="ACCOUNT CREATED! WELCOME TO"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="@font/poppins_extrabold"
             android:textColor="@color/black"
             android:textSize="30dp"/>
 
@@ -35,24 +35,24 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:text="YOU CAN SHARE YOUR USERNAME TO THREE MORE USERS"
+            android:text="YOU CAN SHARE YOUR USERNAME TO THREE MORE USERS."
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_semibold"
-            android:textSize="15dp"/>
+            android:textSize="18dp"/>
 
         <Button
-            android:id="@+id/homebtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/white"
-            android:text="GO TO LOGIN"
-            android:textColor="@color/white"
-            android:textSize="15dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:ems="9"
-            android:background="@drawable/button_background"/>
-            <!-- change button color -->
+        android:id="@+id/UHomebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:text="GO TO HOME"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:ems="10"
+        android:background="@drawable/button_background"/>
 
     </LinearLayout>
 

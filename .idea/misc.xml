@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/drawable/button_background.xml" value="0.2525" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/drawable/edt_background.xml" value="0.2525" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/drawable/edt_background2.xml" value="0.262" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/drawable/gray_background.xml" value="0.2525" />
@@ -15,10 +16,11 @@
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_doorbellhistory.xml" value="0.22530996152201796" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_listofregisteredvisitors.xml" value="0.22445489525438223" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_login.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_registereduserhome.xml" value="0.21376656690893545" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_registervisitor.xml" value="0.264" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_registervisitor2.xml" value="0.264" />
-        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_signup.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_signup2.xml" value="0.1" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_signup2.xml" value="0.264" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_userhome.xml" value="0.264" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/activity_welcomepage.xml" value="0.264" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/authorized_users.xml" value="0.4" />
@@ -30,6 +32,7 @@
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/menu_button.xml" value="0.4" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/popout_askforaccount.xml" value="0.22530996152201796" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/popout_askforcode.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/popout_connectedaccount.xml" value="0.4" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/popout_dyk.xml" value="0.264" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/popout_login.xml" value="0.22530996152201796" />
         <entry key="..\:/Users/Rica Insendencia/AndroidStudioProjects/1_hearduino_mobileapp-master/app/src/main/res/layout/popout_loginwgoogle.xml" value="0.4" />

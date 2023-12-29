@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity_UserHome"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_user_home"
+        android:id="@+id/header_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <!-- connected to -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="5dp" />
+        <include layout="@layout/popout_connectedaccount"/>
+
+        <!-- battery and vibreation intensity seekbar -->
+        <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- doorbell battery -->
+            <include layout="@layout/doorbell_battery" />
+
+            <!-- vibration seekbar -->
+            <include layout="@layout/vibratrion_level"/>
+
+        </LinearLayout>
+
+        <!-- battery and storage capacity -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- wearable device battery -->
+            <include layout="@layout/watch_battery"/>
+
+            <!-- storage capacity -->
+            <include layout="@layout/storage_capacity"/>
+
+        </LinearLayout>
+
+        <!-- doorbell activity -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="5dp" />
+        <include layout="@layout/doorbell_activity"/>
+
+        <!-- menu button -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_margin="5dp" />
+        <Button
+            android:id="@+id/menubutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_background"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="MENU"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
